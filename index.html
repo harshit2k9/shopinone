@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Screen</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: linear-gradient(to bottom, #3498db, #2c3e50);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .loading-container {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .company-logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+      border: 5px solid #fff;
+      border-radius: 10px;
+    }
+
+    .loading-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: blue;
+      /* Change the color to gold */
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loading-container">
+    <img src="icon.png" alt="Company Logo" class="company-logo">
+    <p class="loading-text">We are loading the content....</p>
+  </div>
+
+</body>
+
+</html>
